@@ -4,9 +4,14 @@ public class Main {
         int startingYear = 2000;
         int targetYear = 2011;
         int currentYear = startingYear + 1;
+        
+        // conditional logic based on the current year
         while (currentYear < targetYear) {
-            System.out.println((currentYear - startingYear) + " year(s) have passed");
-            // conditional logic based on the current year
+            if (currentYear - startingYear == 1) {
+                System.out.println((currentYear - startingYear) + " year has passed");
+            } else {
+                System.out.println((currentYear - startingYear) + " years have passed");
+            }
             currentYear++;
         }
 
